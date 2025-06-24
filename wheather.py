@@ -22,14 +22,14 @@ with col1:
     Humidity = st.text_input("Enter Humidity (%)")
     WindSpeed = st.text_input("Enter Wind Speed (km/h)")
     Precipitation = st.text_input("Enter Precipitation")
-    CloudCover = st.text_input("Cloud Cover (0: Clear, 3: Partly Cloudy, 2: Overcast)")
+    CloudCover = st.text_input("Cloud Cover (1: Clear, 2: Partly Cloudy, 3: Overcast)")
 
 with col2:
     AtmosphericPressure = st.text_input("Atmospheric Pressure (hPa)")
     UVIndex = st.text_input("UV Index")
-    Season = st.text_input("Season (3: Winter, 1: Spring, 2: Summer)")
+    Season = st.text_input("Season (1: Winter, 2: Spring, 3: Summer)")
     Visibility = st.text_input("Visibility (km)")
-    Location = st.text_input("Location (1: Inland, 2: Mountain, 0: Coastal)")
+    Location = st.text_input("Location (1: Inland, 2: Mountain, 3: Coastal)")
 if st.button('Predict Weather'):
     try:
         input_data = (
