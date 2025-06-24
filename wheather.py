@@ -1,7 +1,7 @@
 import numpy as np
 import pickle
 import streamlit as st
-weather_model = pickle.load(open("D:/Wheather/weather_model.sav", "rb"))
+weather_model = pickle.load(open("weather_model.sav", "rb"))
 def Predict(input_data):
     input_data_num = np.asarray(input_data, dtype=float)
     input_data_reshaped = input_data_num.reshape(1, -1)
